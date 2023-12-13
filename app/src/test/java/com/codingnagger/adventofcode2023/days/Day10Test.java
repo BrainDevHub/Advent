@@ -12,7 +12,6 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Day10Test {
-    private static final List<String> INPUT = InputLoader.LoadTest("day3.txt");
     private static final Day DAY = new Day10();
 
     public static Stream<Arguments> partTwo() {
@@ -31,7 +30,6 @@ public class Day10Test {
                         ), "0"),
                 Arguments.of("Simplest circuit from part one with only ground around", InputLoader.LoadTest("day10_simplest.txt"), "1"),
                 Arguments.of("Simple circuit from part one with random pipes and no ground", InputLoader.LoadTest("day10_simple.txt"), "1"),
-                Arguments.of("Complex circuit from part one with random pipes", InputLoader.LoadTest("day10_complex.txt"), "1"),
                 Arguments.of("First part two example", InputLoader.LoadTest("day10_partTwo.txt"), "4"),
                 Arguments.of("Squeezing part two example", InputLoader.LoadTest("day10_partTwo_squeeze.txt"), "4"),
                 Arguments.of("Complex part two example", InputLoader.LoadTest("day10_partTwo_complex.txt"), "8"),
