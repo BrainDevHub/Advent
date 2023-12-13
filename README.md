@@ -4,6 +4,18 @@ Going through the Advent of code 2023 using Java 21. Should be a fun ride. Also 
 can [check it out here](https://www.codingnagger.com/) or ping me
 on [Minds @CodingNagger](https://minds.com/CodingNagger).
 
+## How to run it
+
+```
+./gradlew clean run
+```
+
+## Running tests
+
+```
+./gradlew clean test
+```
+
 ## Blog posts
 
 Over the past couple of years I ran a cruise log but this year I decided to take a more relaxed approach.

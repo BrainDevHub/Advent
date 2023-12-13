@@ -7,7 +7,7 @@ import java.util.List;
 
 public class InputLoader {
     public static List<String> Load(String filename) {
-        return Load("app/src/main", filename);
+        return Load("src/main", filename);
     }
 
     public static List<String> LoadTest(String filename) {

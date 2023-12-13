@@ -41,4 +41,20 @@ application {
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+
+    jvmArgs("--enable-preview", "-XX:+UseZGC", "-XX:+ZGenerational")
+}
+
+tasks.named<JavaCompile>("compileJava") {
+    options.compilerArgs.add("--enable-preview")
+    options.compilerArgs.add("-Xlint:preview")
+}
+
+tasks.named<JavaCompile>("compileTestJava") {
+    options.compilerArgs.add("--enable-preview")
+    options.compilerArgs.add("-Xlint:preview")
+}
+
+tasks.named<JavaExec>("run") {
+    jvmArgs("--enable-preview", "-XX:+UseZGC", "-XX:+ZGenerational")
 }
